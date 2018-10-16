@@ -1,0 +1,11 @@
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\bin\Debug\netcoreapp2.0\TcpBrokerTest.deps.json
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\bin\Debug\netcoreapp2.0\TcpBrokerTest.runtimeconfig.json
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\bin\Debug\netcoreapp2.0\TcpBrokerTest.runtimeconfig.dev.json
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\bin\Debug\netcoreapp2.0\TcpBrokerTest.dll
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\bin\Debug\netcoreapp2.0\TcpBrokerTest.pdb
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\obj\Debug\netcoreapp2.0\TcpBrokerTest.csprojAssemblyReference.cache
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\obj\Debug\netcoreapp2.0\TcpBrokerTest.csproj.CoreCompileInputs.cache
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\obj\Debug\netcoreapp2.0\TcpBrokerTest.AssemblyInfoInputs.cache
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\obj\Debug\netcoreapp2.0\TcpBrokerTest.AssemblyInfo.cs
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\obj\Debug\netcoreapp2.0\TcpBrokerTest.dll
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest\obj\Debug\netcoreapp2.0\TcpBrokerTest.pdb
