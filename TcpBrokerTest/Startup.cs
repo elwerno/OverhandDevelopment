@@ -40,7 +40,6 @@ namespace TcpBrokerTest
             var server = app.ApplicationServices.GetService<IMqttServer>();
             server.ApplicationMessageReceived += (s, e) =>
             {
-                Console.WriteLine("Hello World");
                 // TODO split values up! & find out what is what.
                 // -> parse values like in the code from Ricky.
                 var payload = string.Concat(e.ApplicationMessage.Payload);

@@ -1,0 +1,14 @@
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\obj\Debug\netcoreapp2.1\TcpBrokerTest.Tests.csprojAssemblyReference.cache
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\obj\Debug\netcoreapp2.1\TcpBrokerTest.Tests.csproj.CoreCompileInputs.cache
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\obj\Debug\netcoreapp2.1\TcpBrokerTest.Tests.AssemblyInfoInputs.cache
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\obj\Debug\netcoreapp2.1\TcpBrokerTest.Tests.AssemblyInfo.cs
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\bin\Debug\netcoreapp2.1\TcpBrokerTest.Tests.deps.json
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\bin\Debug\netcoreapp2.1\TcpBrokerTest.Tests.runtimeconfig.json
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\bin\Debug\netcoreapp2.1\TcpBrokerTest.Tests.runtimeconfig.dev.json
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\bin\Debug\netcoreapp2.1\TcpBrokerTest.Tests.dll
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\bin\Debug\netcoreapp2.1\TcpBrokerTest.Tests.pdb
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\obj\Debug\netcoreapp2.1\TcpBrokerTest.Tests.dll
+C:\Users\werel\OneDrive\Documents\OverhandFitness\TCPTestConnection\Maurice\project\TcpBrokerTest.Tests\obj\Debug\netcoreapp2.1\TcpBrokerTest.Tests.pdb

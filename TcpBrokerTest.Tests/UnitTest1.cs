@@ -1,30 +1,84 @@
+/*
+ * Bugs/Uncertainties:
+ * The Code uses the first 180 values passed on by the trackers (because this is what's expected), anyway there are
+ * 205 bytes per pack! Those 25 additional Bytes aren't considert in the current system!
+ */
+
 using System;
 using Xunit;
 
 namespace TcpBrokerTest.Tests
 {
-    public class ParseTests
+    public class Parse
     {
-        [Fact]
-        public void Should_Do_The_Parsing_Correctly()
+        /*
+         * Function: 
+         * Converts the String to a Byte-Array, which then will past on to ParseByte
+         * 
+         * Input:
+         * stringData = 1 data pack (10 measurements) from the Overhand-trackers in a String
+         * 
+         * Output:
+         * A 2D Array, ParseString[Measurement, Sensor], values are all Int32
+         * => 0 = gyroX ; 1 = gyroY; 2 = gyroZ ; 3 = lowAccelX ; 4 = lowAccelY ; 5 = lowAccelZ ; 6 = highAccelX ; 7 = highAccelY ; 8 = highAccelZ
+         */
+        public Int32[,] ParseString(string stringData)
         {
-            // string data = "20021625500400100168711625414518422002162550040050168711625414418422002162550040000158711625414418322002162550035000160711525414418322002162550040000168711625414418422002162550044060174711625414418422002162550040010016071162541451832200216255003401001607115254145183220021625500360160161711525414518322002162550046020016571162541461832";
-            byte[] input = { 0x20, 0x02};
+            byte[] byteData = new byte[stringData.Length/2];
 
-            // define expected output
-            short expected = 1; // todo define this correctly
+            // convert string to byte Array
+            for (int index = 0; index < stringData.Length; index += 2)
+            {
+                byteData[index/2] = Convert.ToByte(stringData.Substring(index, 2), 16);
+            }
 
-            // get actual value
-            short actual = ParseBytes(input);
+            // get parsed value
+            Int32[,] result = new Int32[10, 9];
+            result = ParseByte(byteData);
 
-            // assertion
-            Assert.Equal(expected, actual);
+            return result;
         }
 
-        public short ParseBytes(byte[] bytesToParse)
+        /*
+         * Function: 
+         * Formats the data from the Overhand-trackers correctly
+         * 
+         * Input:
+         * byteData = 1 data pack (10 measurements) from the Overhand-trackers in a (byte-)Array
+         * 
+         * Output:
+         * A 2D Array, ParseByte[Measurement, Sensor], values are all Int32
+         * => 0 = gyroX ; 1 = gyroY; 2 = gyroZ ; 3 = lowAccelX ; 4 = lowAccelY ; 5 = lowAccelZ ; 6 = highAccelX ; 7 = highAccelY ; 8 = highAccelZ
+         */
+        public Int32[,] ParseByte(byte[] byteData)
         {
-            // todo PARSE
-            return 0;
+            Int32[,] formatted = new Int32[10, 9];
+
+            // count through all the measurements
+            for(int measurement = 0; measurement < 10; measurement++)
+            {
+                // count through all the sensors
+                for(int sensor = 0; sensor < 9; sensor++)
+                {
+                    // select the bytes
+                    byte byteA = byteData[sensor + measurement * 9];
+                    byte byteB = byteData[sensor + measurement * 9 + 1];
+
+                    // shift bytes together
+                    int sign = Convert.ToByte(byteB) & Convert.ToByte(0x80);
+                    Int32 provisional = Convert.ToInt32(byteB << 8 | byteA);
+
+                    // check if +/-
+                    if (sign==128)
+                    {
+                        provisional = 32768 + (provisional * -1);
+                    }
+
+                    // save everything in a array
+                    formatted[measurement, sensor] = provisional;
+                }
+            }
+            return formatted;
         }
     }
 }
